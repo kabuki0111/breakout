@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            // F5: ビルドしてからデバッガ付きで起動 / Ctrl+F5: ビルドしてからデバッガなしで起動
+            "name": "Breakout (Debug)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/Debug/breakout.exe",
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "cmake: build",
+            "console": "internalConsole"
+        }
+    ]
+}

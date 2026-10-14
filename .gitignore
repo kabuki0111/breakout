@@ -1,0 +1,47 @@
+# ---- ビルド成果物 ----
+build/
+out/
+[Dd]ebug/
+[Rr]elease/
+x64/
+
+# CMake が生成するファイル（build/ の外で構成した場合に備えて）
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+
+# 個人ごとの CMake プリセット（ローカルの vcpkg パスなどを書く用）
+CMakeUserPresets.json
+
+# vcpkg マニフェストモードで作られるフォルダ
+vcpkg_installed/
+
+# ---- コンパイラ・リンカの中間ファイル ----
+*.obj
+*.o
+*.pdb
+*.ilk
+*.idb
+*.exp
+*.lib
+*.exe
+*.dll
+
+# ---- エディタ・IDE ----
+# VS Code の共有設定（ビルド・F5 実行用）はコミットし、それ以外は除外
+.vscode/*
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/settings.json
+.vs/
+*.user
+*.suo
+
+# Claude Code のローカル設定
+.claude/
+
+# ---- OS ----
+Thumbs.db
+desktop.ini
+.DS_Store

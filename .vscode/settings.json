@@ -1,0 +1,4 @@
+{
+    // CMake Tools 拡張にも CMakePresets.json の設定を使わせる（独自の構成で build/ を上書きさせない）
+    "cmake.useCMakePresets": "always"
+}

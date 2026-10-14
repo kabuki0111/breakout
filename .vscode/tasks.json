@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            // CMake の構成（設定内容は CMakePresets.json の "default"）
+            "label": "cmake: configure",
+            "type": "process",
+            "command": "cmake",
+            "args": ["--preset", "default"],
+            "options": { "cwd": "${workspaceFolder}" },
+            "problemMatcher": []
+        },
+        {
+            // Debug 構成でビルド（Ctrl+Shift+B でも実行できる）
+            "label": "cmake: build",
+            "type": "process",
+            "command": "cmake",
+            "args": ["--build", "--preset", "debug"],
+            "options": { "cwd": "${workspaceFolder}" },
+            "dependsOn": "cmake: configure",
+            "problemMatcher": "$msCompile",
+            "group": { "kind": "build", "isDefault": true }
+        }
+    ]
+}
